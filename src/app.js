@@ -1,10 +1,10 @@
-import express from 'express';
-import routes from './routes';
+import express from 'express'
+import routes from "./routes"
 
 class App {
     constructor() {
-        this.server = express();
-        this.server.use(express.json());
+        this.server = express()
+        this.server.use(express.json())
         this.routes();
     }
     routes() {
@@ -12,4 +12,4 @@ class App {
     }
 }
 
-export default new App().server;
+export default new App().server

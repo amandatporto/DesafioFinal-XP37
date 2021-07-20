@@ -1,26 +1,26 @@
-import { Router } from 'express';
-const router = new Router();
+import { Router } from 'express'
+const router = new Router()
 
-import mysql from 'mysql2';
-import dbconfig from './config/dbconfig';
+import mysql from 'mysql2'
+import bdconfig from './config/bdconfig'
 
 var connection = mysql.createConnection({
-    host: dbconfig.host,
-    user: dbconfig.user,
-    password: dbconfig.password,
-    database: dbconfig.bd
+    host: bdconfig.host,
+    user: bdconfig.user,
+    password: bdconfig.password,
+    database: bdconfig.db,
 })
-
-connection.connect();
+connection.connect()
 
 connection.connect((err) => {
-    if (err) throw err;
-    console.log('Conectado à base de dados.')
-});
+    if ( err ) throw err;
+    console.log('Conectado a base de dados');
+})
 
+router.get('/', (req, res) => {
+    return res.json({message: 'OK'})
+})
 
-
-// get /cidades
 router.get('/cidades', (req, res) => {
     connection.query(
         //inserir SELECT ' 
@@ -32,7 +32,7 @@ router.get('/cidades', (req, res) => {
 });
 
 // GET /cidades/{id_cidades}
-router.get( '/cidades/:cidadeId', (req, res) => {
+router.get('/cidades/:cidadeId', (req, res) => {
     connection.query(
         //inserir SELECT    
         [req.params.cidadeId],
@@ -50,3 +50,4 @@ router.get( '/cidades/:cidadeId', (req, res) => {
 
 //GET /cidades/{id_cidades}/atracoes/{id_atracao}
 
+export default router
