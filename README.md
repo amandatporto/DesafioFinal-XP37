@@ -43,7 +43,8 @@ Inserir métodos e endpoints
 4.  Entre em sua conexão
 5.  Rode os seguintes scripts obrigatoriamente na seguinte ordem:
 
-        inserir roteiro 
+      1. Base de Dados/base_dados.sql
+      2. Base de Dados/dados_teste.sql
 
 6.  Abra o arquivo [_dbconfig_](src/config/dbconfig.js) e substitua por suas informações de conexão, como no exemplo abaixo: 
     ```js
@@ -55,6 +56,3 @@ Inserir métodos e endpoints
     };
     ```
 7. Rode o comando de execução e a mensagem "Conectado a base de dados" aparecerá no console. 
-
-
-## **Métodos**

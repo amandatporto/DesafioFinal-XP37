@@ -46,8 +46,7 @@ router.get('/cidades/:cidadeId', (req, res) => {
     );
 });
 
-//GET /cidades/{id_cidades}/atracoes
-
 //GET /cidades/{id_cidades}/atracoes/{id_atracao}
+
 
 export default router
