@@ -2,13 +2,13 @@ import { Router } from 'express'
 const router = new Router()
 
 import mysql from 'mysql2'
-import bdconfig from './config/bdconfig'
+import dbconfig from './config/dbconfig'
 
 var connection = mysql.createConnection({
-    host: bdconfig.host,
-    user: bdconfig.user,
-    password: bdconfig.password,
-    database: bdconfig.db,
+    host: dbconfig.host,
+    user: dbconfig.user,
+    password: dbconfig.password,
+    database: dbconfig.db,
 })
 connection.connect()
 

@@ -4,16 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="./estilo.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./style.css">
     <title>.: FlaminGO :.</title>
-</head>
-
-
-<body>
     
-    <header>
-    </header>
+</head>
+<body>
+    <div class="container">
 
+        <div class="hamburger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
+        
+        <header>
+            <div class="img-wrapper">
+                <img src="media\alexsandre-almeida-mLZtDFSGVl4-unsplash.jpg" alt="">
+            </div>
+            <div class="banner">
+                <h1>FlaminGO</h1>
+                <p>O que você quer descobrir hoje?</p>
+                <button>Let's Go!</button>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Destinos perto de você</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Roteiros inspiradores</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Perfil | Cadastro</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </aside>
+
+        <section class="sessao-destinos">
+            <div class="sessao-header">
+                <h1>Destinos perto de você</h1>
+            </div>
+            <div class="destinos">
+                <div class="card">
+                    <div class="card img-wrapper">
+                        <img src="media\itu-gecon-condominios-XbXlztw07_w-unsplash.jpg" alt="Itu-SP" />
+                    </div>
+                    <div class="card-info">
+                        <h2>Itu-SP</h2>
+                        <p>1h30min de carro</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card img-wrapper">
+                        <img src="media\santos-caio-ribeiro-pereira-iplYvp_cZKE-unsplash.jpg" alt="Santos-SP">
+                    </div>
+                    <div class="card-info">
+                        <h2>Santos-SP</h2>
+                        <p>1h30min de carro</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card img-wrapper">
+                        <img src="media\camposjordao-caio-pezzo-CJ7kq3VyBAc-unsplash.jpg" alt="Campos do Jordão-SP">
+                    </div>
+                    <div class="card-info">
+                        <h2>Campos do Jordão-SP</h2>
+                        <p>2h30min de carro</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card img-wrapper">
+                        <img src="media\ubatuba-rodolfo-giglioli-boFnla22VMc-unsplash.jpg" alt="Ubatuba-SP">
+                    </div>
+                    <div class="card-info">
+                        <h2>Ubatuba-SP</h2>
+                        <p>3h de carro</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    
+    </div>
 </body>
+
+<script src="script.js"></script>
+
 </html>

@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LaraIasmine/DesafioFinal-XP37.git"
+    "url": "git+https://github.com/amandatporto/DesafioFinal-XP37.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LaraIasmine/DesafioFinal-XP37/issues"
+    "url": "https://github.com/amandatporto/DesafioFinal-XP37/issues"
   },
-  "homepage": "https://github.com/LaraIasmine/DesafioFinal-XP37#readme",
+  "homepage": "https://github.com/amandatporto/DesafioFinal-XP37#readme",
   "dependencies": {
     "express": "^4.17.1",
     "mysql2": "^2.2.5"
