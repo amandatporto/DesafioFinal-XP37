@@ -157,10 +157,7 @@ body {
 .hamburger span.before {
     content: "";
     position: absolute;
-    border-right: .5rem solid #fe8980;
-    border-top: .5rem solid transparent;
-    border-left: .5rem solid transparent;
-    border-bottom: .5rem solid transparent;
+    
     left: -1rem;
 }
 
@@ -444,4 +441,8 @@ body {
     background-color: #fff;
     border: 1px solid #fe8980;
     color: #fe8980;
+}
+
+.placeholder {
+    background-color: #;
 }
