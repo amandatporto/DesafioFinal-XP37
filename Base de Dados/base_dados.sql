@@ -170,6 +170,7 @@ CREATE TABLE `pontos_turisticos` (
   `fk_enderecos` int NOT NULL,
   `horario_abertura` time NOT NULL,
   `horario_fechamento` time NOT NULL,
+  `img_source` text NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_setor_idx` (`fk_setor`),
   KEY `fk_endereco_idx` (`fk_enderecos`),
