@@ -241,17 +241,15 @@ body {
 }
 
 .destinos {
-    display: grid;
+    display: flex;
+    margin: 3rem 3rem 5rem;
     justify-content: space-between;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 15rem);
-    margin: 3rem 3rem 2rem;
     cursor: pointer;
 }
 
 .destinos .card {
-    width: 18rem;
-    height: 10rem;
+    width: 16rem;
+    height: 8rem;
 }
 
 .destinos .card .img-wrapper {
@@ -289,22 +287,20 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #4e4e4e;
     text-align: justify;
-    margin: -1rem 3rem 2rem;
+    margin: 3rem 3rem 2rem;
     font-size: 24px;
     font-weight: bolder;
 }
 
 .roteiros {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 12rem);
-    margin: 3rem 3rem 2rem;
-    justify-content:space-between;
+    display: flex;
+    margin: 3rem 3rem 5rem;
+    justify-content: space-between;
     cursor: pointer;
 }
 
 .roteiros .card {
-    width: 18rem;
+    width: 20rem;
     height: 10rem;
 }
 
@@ -332,13 +328,120 @@ body {
     font-weight: bold;
 }
 
-.container .sessao-cadastro-perfil {
-     display: flex;
+.sessao-cadastro-perfil .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.sessao-cadastro-perfil {
+    background-color: #fff;
+    border-radius: 16px;
+    width: 80%;
+    height: 50%;
+    margin-left: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.sessao-cadastro-perfil::before {
+    content: "";
+    position: absolute;
+    background-color: #fe8980;
+    width: 40%;
+    height: 100%;
+}
+
+.perfil {
+    display: flex;
+    text-align: center;
+}
+
+.first-column {
+    flex: 1 0 auto;
+    text-align: center;
+    padding: 30px;
+    z-index: 10;
+}
+
+.second-column {
+    display: flex;
+    flex: 2 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.sessao-cadastro-perfil .title-1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.sessao-cadastro-perfil .title-2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #4e4e4e;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
 .cadastro {
+    /* display: flex;
+    text-align: center;*/
     position: absolute;
     display: none;
 }
 
+.sessao-cadastro-perfil .btn-1 {
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border: 1px solid #fe8980;
+    color: #fe8980;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 16px 8px;
+    cursor: pointer;
+    transition: color 1s;
+}
 
+.sessao-cadastro-perfil .btn-1:hover {
+    background-color: #fe8980;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.sessao-cadastro-perfil .btn-2 {
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fe8980;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 16px 8px;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+.sessao-cadastro-perfil .btn-2:hover {
+    background-color: #fff;
+    border: 1px solid #fe8980;
+    color: #fe8980;
+}
