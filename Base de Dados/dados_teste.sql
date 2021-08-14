@@ -3,7 +3,6 @@ INSERT INTO `sistema_turismo`.`cidades` (`nome`, `estado`) VALUES ('Santos', 'SP
 INSERT INTO `sistema_turismo`.`cidades` (`nome`, `estado`) VALUES ('Natal', 'RN');
 INSERT INTO `sistema_turismo`.`cidades` (`nome`, `estado`) VALUES ('Campos do Jordão', 'SP');
 
-SELECT * FROM sistema_turismo.enderecos;
 INSERT INTO `sistema_turismo`.`enderecos` (`logradouro`, `numero`, `complemento`, `cep`, `fk_cidade`) 
 VALUES 
 ('Rua da boa fé', '80', '', '13265955', '1'),
